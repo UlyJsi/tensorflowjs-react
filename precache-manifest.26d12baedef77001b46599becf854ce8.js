@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "895c9f2f6ce7988a813c18b6243b1494",
+    "revision": "5be9348f25eddac53245a6993b2f94df",
     "url": "/UlyJsi/tensorflowjs-react/index.html"
   },
   {
