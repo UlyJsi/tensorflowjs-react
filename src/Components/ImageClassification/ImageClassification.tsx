@@ -18,7 +18,7 @@ export class ImageClassification extends Component<Props, State> {
   };
 
   onLoadModel = async () => {
-    // this.model = await tf.loadModel('../../models/mobilenet/model.json');
+    this.model = await tf.loadModel('https://github.com/UlyJsi/tensorflowjs-react/blob/master/src/models/mobilenet/model.json');
 
     console.log(this.model)
   }
