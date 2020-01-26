@@ -2,7 +2,7 @@
   "name": "tensorflowjs-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ulyjsi.github.io/UlyJsi/tensorflowjs-react",
+  "homepage": "https://ulyjsi.github.io/tensorflowjs-react",
   "dependencies": {
     "@tensorflow-models/coco-ssd": "^2.0.1",
     "@tensorflow/tfjs": "0.12.0",
