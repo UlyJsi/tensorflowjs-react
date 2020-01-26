@@ -8,6 +8,11 @@ canvas {
   /* display: none; */
 }
 
+h1 {
+  font-size: 34px;
+  margin: 24px;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -16,6 +21,11 @@ canvas {
 
 .m {
   margin: 24px;
+}
+
+.red-font {
+  color: red;
+  font-weight: bold;
 }
 
 .ant-input-group-wrapper {
@@ -28,6 +38,27 @@ canvas {
 .ant-input-group-wrapper button {
   height: 50px;
   height: 30px;
+}
+
+.image-classification {
+  margin: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.image-classification .box {
+  margin: 24px;
+}
+
+#picked-img {
+  width: 40%;
+  align-self: flex-start;
+}
+
+.results-info li {
+  margin-bottom: 16px;
+  font-size: 22px;
+  text-align: left;
 }
 
 #main-wrapper {

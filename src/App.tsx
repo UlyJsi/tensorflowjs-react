@@ -197,12 +197,12 @@ class MainApp extends Component {
             </div>
           )}
 
-          {selectedModel && (
+          {selectedModel ? (
             <>
               {models[selectedModel].component}
               <Sketch setup={this.setup} draw={this.draw} />
             </>
-          )}
+          ) : <h1>Select module to start !</h1>}
         </Content>
 
         <Footer style={{ textAlign: 'center' }}>Made with fun &#9786;</Footer>
