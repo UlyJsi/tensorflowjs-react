@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/UlyJsi/tensorflowjs-react/static/css/main.f09e3d62.chunk.css",
-    "main.js": "/UlyJsi/tensorflowjs-react/static/js/main.346df982.chunk.js",
-    "main.js.map": "/UlyJsi/tensorflowjs-react/static/js/main.346df982.chunk.js.map",
+    "main.css": "/UlyJsi/tensorflowjs-react/static/css/main.9e6eebc3.chunk.css",
+    "main.js": "/UlyJsi/tensorflowjs-react/static/js/main.3a587c1b.chunk.js",
+    "main.js.map": "/UlyJsi/tensorflowjs-react/static/js/main.3a587c1b.chunk.js.map",
     "runtime-main.js": "/UlyJsi/tensorflowjs-react/static/js/runtime-main.314fa550.js",
     "runtime-main.js.map": "/UlyJsi/tensorflowjs-react/static/js/runtime-main.314fa550.js.map",
-    "static/css/2.4f285790.chunk.css": "/UlyJsi/tensorflowjs-react/static/css/2.4f285790.chunk.css",
-    "static/js/2.9a1e6315.chunk.js": "/UlyJsi/tensorflowjs-react/static/js/2.9a1e6315.chunk.js",
-    "static/js/2.9a1e6315.chunk.js.map": "/UlyJsi/tensorflowjs-react/static/js/2.9a1e6315.chunk.js.map",
+    "static/css/2.45597a0f.chunk.css": "/UlyJsi/tensorflowjs-react/static/css/2.45597a0f.chunk.css",
+    "static/js/2.aab6d102.chunk.js": "/UlyJsi/tensorflowjs-react/static/js/2.aab6d102.chunk.js",
+    "static/js/2.aab6d102.chunk.js.map": "/UlyJsi/tensorflowjs-react/static/js/2.aab6d102.chunk.js.map",
     "index.html": "/UlyJsi/tensorflowjs-react/index.html",
-    "precache-manifest.26d12baedef77001b46599becf854ce8.js": "/UlyJsi/tensorflowjs-react/precache-manifest.26d12baedef77001b46599becf854ce8.js",
+    "precache-manifest.5b1586040f340cbe7ee4574f7cea9f9e.js": "/UlyJsi/tensorflowjs-react/precache-manifest.5b1586040f340cbe7ee4574f7cea9f9e.js",
     "service-worker.js": "/UlyJsi/tensorflowjs-react/service-worker.js",
-    "static/css/2.4f285790.chunk.css.map": "/UlyJsi/tensorflowjs-react/static/css/2.4f285790.chunk.css.map",
-    "static/css/main.f09e3d62.chunk.css.map": "/UlyJsi/tensorflowjs-react/static/css/main.f09e3d62.chunk.css.map",
-    "static/js/2.9a1e6315.chunk.js.LICENSE": "/UlyJsi/tensorflowjs-react/static/js/2.9a1e6315.chunk.js.LICENSE"
+    "static/css/2.45597a0f.chunk.css.map": "/UlyJsi/tensorflowjs-react/static/css/2.45597a0f.chunk.css.map",
+    "static/css/main.9e6eebc3.chunk.css.map": "/UlyJsi/tensorflowjs-react/static/css/main.9e6eebc3.chunk.css.map",
+    "static/js/2.aab6d102.chunk.js.LICENSE": "/UlyJsi/tensorflowjs-react/static/js/2.aab6d102.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.314fa550.js",
-    "static/css/2.4f285790.chunk.css",
-    "static/js/2.9a1e6315.chunk.js",
-    "static/css/main.f09e3d62.chunk.css",
-    "static/js/main.346df982.chunk.js"
+    "static/css/2.45597a0f.chunk.css",
+    "static/js/2.aab6d102.chunk.js",
+    "static/css/main.9e6eebc3.chunk.css",
+    "static/js/main.3a587c1b.chunk.js"
   ]
 }
