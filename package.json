@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^3.26.3",
     "customize-cra": "^0.9.1",
+    "global": "^4.4.0",
     "ml5": "0.3.1",
     "p5": "^0.10.2",
     "react": "^16.12.0",

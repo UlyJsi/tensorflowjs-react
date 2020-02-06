@@ -28,7 +28,7 @@ export class ImageClassification extends Component<Props, State> {
   };
 
   onLoadModel = async () => {
-    this.model = await tf.loadModel('https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json');
+    // this.model = await tf.loadModel('https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json');
 
     console.log('Model is loaded !')
   };
