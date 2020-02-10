@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as tf from '@tensorflow/tfjs';
-import { Select, message, Button } from 'antd';
+import { Select, message, Button, Spin, Icon } from 'antd';
 
 import { imageNetClasses } from '../../models/imagenet';
 import { Props, State, MappedResult } from './ImageClassification.types';
@@ -11,10 +11,15 @@ export class ImageClassification extends Component<Props, State> {
   state: State = {
     selectedModel: MobileNet,
     file: null,
-    results: []
-  }
+    results: [],
+    loading: false
+  };
   model: any = null;
   pickedImage: any = null;
+
+  componentDidMount = () => {
+    this.onLoadModel();
+  };
 
   preprocessImage() {
     const tensor = tf.fromPixels(this.pickedImage).resizeNearestNeighbor([224, 224]).toFloat();
@@ -23,13 +28,12 @@ export class ImageClassification extends Component<Props, State> {
     return tensor.sub(offset).div(offset).expandDims();
   };
 
-  componentDidMount = () => {
-    this.onLoadModel();
-  };
-
   onLoadModel = async () => {
-    // this.model = await tf.loadModel('https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json');
+    this.setState({ loading: true });
 
+    this.model = await tf.loadModel('https://raw.githubusercontent.com/UlyJsi/tensorflowjs-react/master/src/models/mobilenet/model.json');
+
+    this.setState({ loading: false });
     console.log('Model is loaded !')
   };
 
@@ -76,6 +80,7 @@ export class ImageClassification extends Component<Props, State> {
     this.setState({ results: mostProbableResults });
   };
 
+  // UI STUFF
   renderResultsInformation = () => {
     return (
       <ul className="results-info">
@@ -87,7 +92,9 @@ export class ImageClassification extends Component<Props, State> {
   };
 
   render() {
-    const { file, selectedModel } = this.state;
+    const { file, selectedModel, loading } = this.state;
+
+    if (loading) return <Spin className="m" size='large' indicator={<Icon type='loading' />} />;
 
     return (
       <div className="image-classification">

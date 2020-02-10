@@ -10,6 +10,12 @@ export type MlModels = {
   }
 };
 
+export type ModelsDict = {
+  imageClassification: string,
+  objectDetection: string,
+  transferLearning: string
+};
+
 export type ODResults = {
   label: string,
   confidence: number,

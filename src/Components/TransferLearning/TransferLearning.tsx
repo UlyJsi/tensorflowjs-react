@@ -25,6 +25,7 @@ export class TransferLearning extends Component<Props, State> {
     this.video = null;
   }
 
+  // EVENT HANDLERS
   handleLoadingMode = (loading: boolean) => this.setState({ loading });
   handleActionBtn = (e: RadioChangeEvent) =>
     this.setState({ actionBtn: e.target.value });
@@ -40,7 +41,7 @@ export class TransferLearning extends Component<Props, State> {
     // single training
     this.props.classifier.addImage(value);
 
-    // do UI stuff
+    // UI stuff
     if (trainingExamples[index]) {
       trainingExamples[index].counter += 1;
     } else {
@@ -50,6 +51,7 @@ export class TransferLearning extends Component<Props, State> {
     this.setState({ trainingExamples });
   };
 
+  // TRAINING
   onTrainExamples = (loss: number | null) => {
     if (loss === null) {
       this.handleLoadingMode(false);
@@ -68,14 +70,17 @@ export class TransferLearning extends Component<Props, State> {
     if (err) {
       console.log(err);
     } else {
+      // UI stuff
       const label = String(results[0].label).toUpperCase();
       this.props.getTLLabel(label);
 
+      // looping training
       this.props.classifier.classify(this.onResultsReady);
       this.setState({ trainingExamples: [] });
     }
   };
 
+  // UI STUFF
   renderTrainingExamples = () => {
     const { Search } = Input;
     const { trainingExamples, trainExamplCounter, loading } = this.state;

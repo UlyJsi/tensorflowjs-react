@@ -6,9 +6,9 @@ import Sketch from 'react-p5';
 import { TransferLearning } from './Components/TransferLearning/TransferLearning';
 import { ImageClassification } from './Components/ImageClassification/ImageClassification';
 
-import { State, MlModels, ODResults } from './App.types';
+import { State, MlModels, ModelsDict, ODResults } from './App.types';
 
-const MODELS = {
+const MODELS: ModelsDict = {
   imageClassification: 'imageClassification',
   objectDetection: 'objectDetection',
   transferLearning: 'transferLearning'
@@ -28,10 +28,10 @@ class MainApp extends Component {
   mobilenet: any = null;
   classifier: any = null;
   objects: ODResults = [];
-  video: null | any = null;
+  video: any = null;
   trainingClassNum: number = 3;
   tlLabel: string | null = null;
-  model: string | null | any = null;
+  model: any = null;
 
   setup = () => {
     const { selectedModel } = this.state;
@@ -66,6 +66,7 @@ class MainApp extends Component {
     }
   };
 
+  // UI STUFF
   draw = () => {
     const { selectedModel } = this.state;
 
@@ -80,6 +81,7 @@ class MainApp extends Component {
     }
   };
 
+  // UI STUFF
   drawODLabel = () => {
     p5.image(this.video, 0, 0, this.width, this.height);
 
@@ -105,6 +107,7 @@ class MainApp extends Component {
     }
   };
 
+  // UI STUFF
   drawTLLabel = () => {
     const x = 100,
       y = 100;
